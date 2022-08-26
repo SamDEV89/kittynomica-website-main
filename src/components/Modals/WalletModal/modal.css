@@ -1,0 +1,97 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.modal{
+    z-index: 100;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    background: #0D0929;
+    border: 1.5px solid #6549B9;
+    box-shadow: 0px 30px 65px #0D0929;
+    border-radius: 12px;
+    padding: 3rem ;
+    border-radius: 3px;
+    max-width: 1200px;
+    min-width: 300px;
+    min-height: 60vh;
+    margin-top: 3rem;    
+
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: 0;
+    padding: 5px 7px;
+}
+
+.img-container{
+    display: flex;
+    gap: 8rem;
+}
+
+.img-container > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.img-container > div p{
+    color: white;
+    font-size: 2rem;
+}
+.img{
+    width: 136px;
+    height: 136px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:500px){
+    .img-container{
+     gap: 1.5rem;
+    }
+ .img{
+    width: 130px;
+    height: 130px;
+
+   }
+ .modal-content{
+    padding: 1rem;
+ }
+
+ .provider{
+    font-size: 20px;
+    text-align: center;
+ }
+}
